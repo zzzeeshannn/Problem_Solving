@@ -8,6 +8,7 @@
 using namespace std;
 // This was the fastest method at the time
 // Another possible approach is the sliding window approach but it is comparatively slower
+// Alternatively we can convert to string and split by 0 as well
 int findMaxConsecutiveOnes(vector<int>& nums) {
     int count = 0;
     int output = 0;
