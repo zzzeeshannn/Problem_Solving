@@ -41,7 +41,7 @@ int sortedSquares(int arr[], int arrayLength){
 }
 
 int main(){
-    int defaultArray[] = {-2, -1, 1, 2, 4};
+    int defaultArray[] = {-7, -2, -1, 1, 2, 4, 7};
     int len = sizeof(defaultArray)/sizeof(defaultArray[0]);
     cout << "Length is: " << len << endl;
     sortedSquares(defaultArray, len);
