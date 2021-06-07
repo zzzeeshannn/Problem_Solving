@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
@@ -76,6 +77,26 @@ int trap_stack(vector<int>& height) {
     }
     return ans;
 }
+
+// Using two pointer method
+int trap_twoPointer(vector<int>& height)
+{
+    int left = 0, right = height.size() - 1;
+    int ans = 0;
+    int left_max = 0, right_max = 0;
+    while (left < right) {
+        if (height[left] < height[right]) {
+            height[left] >= left_max ? (left_max = height[left]) : ans += (left_max - height[left]);
+            ++left;
+        }
+        else {
+            height[right] >= right_max ? (right_max = height[right]) : ans += (right_max - height[right]);
+            --right;
+        }
+    }
+    return ans;
+}
+
 int main(){
     // Defining the array that stores the height of the elements
     vector<int> height;
@@ -84,7 +105,13 @@ int main(){
     int totalWater = trap(height);
     cout << "The total amount of water that can be saved is: " << totalWater << " (NAIVE METHOD)" << endl;
     // Output
-    int totalWater2 = trap(height);
-    cout << "The total amount of water that can be saved is: " << totalWater << " (DYNAMIC PROGRAMMING METHOD)" << endl;
+    int totalWater2 = trap_dp(height);
+    cout << "The total amount of water that can be saved is: " << totalWater2 << " (DYNAMIC PROGRAMMING METHOD)" << endl;
+    // Output
+    int totalWater3 = trap_stack(height);
+    cout << "The total amount of water that can be saved is: " << totalWater3 << " (STACK METHOD)" << endl;
+    // Output
+    int totalWater4 = trap_twoPointer(height);
+    cout << "The total amount of water that can be saved is: " << totalWater4 << " (TWO POINTER METHOD)" << endl;
 }
 
