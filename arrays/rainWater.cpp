@@ -53,6 +53,29 @@ int trap_dp(vector<int>& height) {
     return ans;
 }
 
+// Finding the answer using stacks
+int trap_stack(vector<int>& height) {
+    int current = 0;
+    int ans = 0;
+
+    stack<int> st;
+    while(current < height.size()){
+        while(!st.empty() && height[current]>height[st.top()]){
+            int top = st.top();
+            st.pop();
+            if(st.empty()){
+                break;
+            }
+            else{
+                int distance = current - st.top() - 1;
+                int bounded_height = min(height[current], height[st.top()]) - height[top];
+                ans += bounded_height*distance;
+            }
+        }
+        st.push(current++);
+    }
+    return ans;
+}
 int main(){
     // Defining the array that stores the height of the elements
     vector<int> height;
