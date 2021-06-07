@@ -9,3 +9,7 @@ add_executable(even_digits
 add_executable(squared_sort
         arrays/squared_sort.cpp
         )
+
+add_executable(rainWater
+        arrays/rainWater.cpp
+        )
