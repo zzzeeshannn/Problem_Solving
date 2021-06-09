@@ -13,3 +13,7 @@ add_executable(squared_sort
 add_executable(rainWater
         arrays/rainWater.cpp
         )
+
+add_executable(trappingRainwater3D
+        queue/trappingRainwater3D.cpp
+        )
