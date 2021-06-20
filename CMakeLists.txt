@@ -17,3 +17,7 @@ add_executable(rainWater
 add_executable(trappingRainwater3D
         queue/trappingRainwater3D.cpp
         )
+
+add_executable(Alternate_PosNegNumbers
+        Alternate_PosNegNumbers.cpp
+        )
