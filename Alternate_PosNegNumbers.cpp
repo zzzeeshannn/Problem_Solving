@@ -2,6 +2,8 @@
 // Created by Zeeshan Shaikh on 6/19/21.
 //
 
+// This program does not conserve the order of the elements of the array
+
 #include <iostream>
 
 using namespace std;

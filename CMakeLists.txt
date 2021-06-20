@@ -21,3 +21,7 @@ add_executable(trappingRainwater3D
 add_executable(Alternate_PosNegNumbers
         Alternate_PosNegNumbers.cpp
         )
+
+add_executable(Alternate_PosNegNumbers2
+        Alternate_PosNegNumbers2.cpp
+        )
