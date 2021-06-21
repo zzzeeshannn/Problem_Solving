@@ -19,9 +19,13 @@ add_executable(trappingRainwater3D
         )
 
 add_executable(Alternate_PosNegNumbers
-        Alternate_PosNegNumbers.cpp
+        Alternate_Positioning/Alternate_PosNegNumbers.cpp
         )
 
 add_executable(Alternate_PosNegNumbers2
-        Alternate_PosNegNumbers2.cpp
+        Alternate_Positioning/Alternate_PosNegNumbers2.cpp
+        )
+
+add_executable(clockwiseMethod1
+        matrix_rotation/clockwiseMethod1.cpp
         )
