@@ -33,3 +33,11 @@ add_executable(clockwiseMethod1
 add_executable(antiClockwiseMethod1
         matrix_rotation/antiClockwiseMethod1.cpp
         )
+
+add_executable(clockwiseMethod2
+        matrix_rotation/clockwiseMethod2.cpp
+        )
+
+add_executable(clockwiseMethod3
+        matrix_rotation/clockwiseMethod3.cpp
+        )
