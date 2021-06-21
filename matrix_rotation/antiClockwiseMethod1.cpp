@@ -3,7 +3,7 @@
 //
 
 // In this method, we will rotate the matrix by
-// rotating the elements of the matrix in an orderly fashion in clockwise direction
+// rotating the elements of the matrix in an orderly fashion in antiClockwise direction
 // This is also called inplace rotation and requires only 1 temporary variable
 
 #include <iostream>
@@ -35,10 +35,10 @@ void rotateMatrix(int matrix[N][N]){
     for (int i = 0; i < N/2; i++) {
         for (int j = 0; j < N - i - 1; j++) {
             temp = matrix[i][j];
-            matrix[i][j] = matrix[N - j - 1][i];
-            matrix[N - j - 1][i] = matrix[N - i - 1][N - j - 1];
-            matrix[N - i - 1][N - j - 1] = matrix[j][N - i - 1];
-            matrix[j][N - i - 1] = temp;
+            matrix[i][j] = matrix[j][N - i - 1];
+            matrix[j][N - i - 1] = matrix[N - i - 1][N - j - 1];
+            matrix[N - i - 1][N - j - 1] = matrix[N - j - 1][i];
+            matrix[N - j - 1][i] = temp;
         }
     }
 }

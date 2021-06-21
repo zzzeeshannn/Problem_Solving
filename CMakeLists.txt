@@ -29,3 +29,7 @@ add_executable(Alternate_PosNegNumbers2
 add_executable(clockwiseMethod1
         matrix_rotation/clockwiseMethod1.cpp
         )
+
+add_executable(antiClockwiseMethod1
+        matrix_rotation/antiClockwiseMethod1.cpp
+        )
