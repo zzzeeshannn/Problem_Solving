@@ -14,6 +14,10 @@ add_executable(rainWater
         arrays/rainWater.cpp
         )
 
+add_executable(rotateArray_reversalAlgo
+        arrays/rotateArray_reversalAlgo.cpp
+        )
+
 add_executable(trappingRainwater3D
         queue/trappingRainwater3D.cpp
         )
