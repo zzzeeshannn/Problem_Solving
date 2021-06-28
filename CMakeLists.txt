@@ -22,6 +22,10 @@ add_executable(trappingRainwater3D
         queue/trappingRainwater3D.cpp
         )
 
+add_executable(printBinary
+        queue/printBinary.cpp
+        )
+
 add_executable(Alternate_PosNegNumbers
         Alternate_Positioning/Alternate_PosNegNumbers.cpp
         )
