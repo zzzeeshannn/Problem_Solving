@@ -57,3 +57,7 @@ add_executable(clockwiseMethod2
 add_executable(clockwiseMethod3
         matrix_rotation/clockwiseMethod3.cpp
         )
+
+add_executable(mergeSorted
+        linkedList/mergeSorted.cpp
+        )
