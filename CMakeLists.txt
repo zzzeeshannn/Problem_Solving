@@ -26,6 +26,14 @@ add_executable(printBinary
         queue/printBinary.cpp
         )
 
+add_executable(stacksUsingQueue1
+        queue/stacksUsingQueue1.cpp
+        )
+
+add_executable(stacksUsingQueue2
+        queue/stacksUsingQueue2.cpp
+        )
+
 add_executable(Alternate_PosNegNumbers
         Alternate_Positioning/Alternate_PosNegNumbers.cpp
         )
