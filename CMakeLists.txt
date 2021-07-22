@@ -61,3 +61,7 @@ add_executable(clockwiseMethod3
 add_executable(mergeSorted
         linkedList/mergeSorted.cpp
         )
+
+add_executable(nutsAndBolts
+        D&C/nutsAndBolts.cpp
+        )

@@ -35,7 +35,7 @@ void rearrangeArray(int arr[], int lenArr){
     // Iterate over the array
     for (int i = 0; i < lenArr; i++) {
 
-        // Check if the element is out of place
+        // If the element is out of place
         if (outOfPlace >= 0){
             if (((arr[i] >= 0) && arr[outOfPlace] < 0) || ((arr[i] < 0) && (arr[outOfPlace] >= 0))){
 

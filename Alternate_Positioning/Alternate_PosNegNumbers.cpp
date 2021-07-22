@@ -35,6 +35,8 @@ void rearrangeArray(int arr[], int lenArr){
             swap(arr[j], arr[i]);
         }
     }
+    // After the last loop, all negative numbers are the start of the array
+    // And all positive numbers are after them
 
     // Define the indices for positive and negative number
     int positive_index = i+1;
